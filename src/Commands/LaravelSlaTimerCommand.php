@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Sifex\LaravelSlaTimer\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelSlaTimerCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-sla-timer';
 
     public $description = 'My command';
 
