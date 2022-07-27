@@ -38,8 +38,7 @@ return [
 ## Usage
 
 ```php
-$laravelSlaTimer = new Sifex\LaravelSlaTimer();
-echo $laravelSlaTimer->echoPhrase('Hello, Sifex!');
+
 ```
 
 ## Testing

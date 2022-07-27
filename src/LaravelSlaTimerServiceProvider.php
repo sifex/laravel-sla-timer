@@ -17,9 +17,10 @@ class LaravelSlaTimerServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-sla-timer')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-sla-timer_table')
-            ->hasCommand(LaravelSlaTimerCommand::class);
+            ->hasConfigFile('sla')
+            ->hasMigration('create_sla_breach_schemes_table')
+            ->hasMigration('create_sla_breaches_table')
+            ->hasMigration('create_sla_schedule_schemes_table')
+            ->hasMigration('create_sla_schedules_table.php');
     }
 }
