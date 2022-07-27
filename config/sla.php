@@ -8,7 +8,7 @@ use Sifex\LaravelSlaTimer\Models\SlaScheduleScheme;
 return [
 
     'cache' => [
-        'enabled' => false // TODO
+        'enabled' => false, // TODO
     ],
 
     'eloquent' => [
@@ -28,5 +28,5 @@ return [
             'table' => 'sla_breach_schemes',
             'model' => SLABreachScheme::class,
         ],
-    ]
+    ],
 ];

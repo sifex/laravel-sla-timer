@@ -2,7 +2,6 @@
 
 namespace Sifex\LaravelSlaTimer;
 
-use Sifex\LaravelSlaTimer\Commands\LaravelSlaTimerCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 

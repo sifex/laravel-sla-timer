@@ -2,8 +2,8 @@
 
 namespace Sifex\LaravelSlaTimer\Traits;
 
-use Sifex\LaravelSlaTimer\Models\SlaScheduleScheme;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Sifex\LaravelSlaTimer\Models\SlaScheduleScheme;
 
 /**
  * @method belongsTo: BelongsTo

@@ -16,7 +16,7 @@ class SlaBreachScheme extends Model
      */
     public function toBreaches(): array
     {
-        return collect($this->slaBreaches()->get())->map(function(SlaBreach $slaBreach) {
+        return collect($this->slaBreaches()->get())->map(function (SlaBreach $slaBreach) {
             return $slaBreach->toBreach();
         })->toArray();
     }

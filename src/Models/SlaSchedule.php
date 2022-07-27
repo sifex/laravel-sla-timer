@@ -2,10 +2,10 @@
 
 namespace Sifex\LaravelSlaTimer\Models;
 
-use Sifex\LaravelSlaTimer\Casts\SlaAgendaCollection;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Sifex\LaravelSlaTimer\Casts\SlaAgendaCollection;
 use Sifex\SlaTimer\Interfaces\AgendaInterface;
 use Sifex\SlaTimer\SLASchedule as SLATimerSchedule;
 
