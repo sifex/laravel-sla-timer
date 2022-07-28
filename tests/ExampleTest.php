@@ -7,4 +7,6 @@ uses(RefreshDatabase::class);
 
 it('tests basic functionality', function () {
     $ticket = Ticket::factory()->create();
+
+    $this->assertModelExists($ticket);
 });
