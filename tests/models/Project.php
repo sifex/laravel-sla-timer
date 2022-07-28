@@ -4,7 +4,6 @@ namespace Sifex\LaravelSlaTimer\Tests\models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\R;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Sifex\LaravelSlaTimer\Models\SlaBreachScheme;
 use Sifex\LaravelSlaTimer\Models\SlaScheduleScheme;
