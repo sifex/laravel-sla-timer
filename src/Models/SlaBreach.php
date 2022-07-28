@@ -18,7 +18,7 @@ class SlaBreach extends Model
     protected $fillable = [
         'name',
         'duration',
-        'sla_breach_scheme_id'
+        'sla_breach_scheme_id',
     ];
 
     public function sla_breach_scheme(): BelongsTo

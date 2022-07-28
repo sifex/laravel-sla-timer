@@ -12,7 +12,7 @@ class SlaScheduleScheme extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name'
+        'name',
     ];
 
     /**

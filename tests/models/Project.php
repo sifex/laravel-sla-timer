@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Sifex\LaravelSlaTimer\Models\SlaBreachScheme;
 use Sifex\LaravelSlaTimer\Models\SlaScheduleScheme;
 use Sifex\LaravelSlaTimer\Tests\database\factories\ProjectFactory;
-use Sifex\LaravelSlaTimer\Tests\database\factories\TicketFactory;
 
 class Project extends Model
 {
@@ -18,7 +17,7 @@ class Project extends Model
 
     protected $fillable = [
         'sla_schedule_scheme_id',
-        'sla_breach_scheme_id'
+        'sla_breach_scheme_id',
     ];
 
     public function slaScheduleScheme(): BelongsTo

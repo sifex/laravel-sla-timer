@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Sifex\LaravelSlaTimer\Casts\SlaAgendaCollection;
-use Sifex\SlaTimer\Interfaces\AgendaInterface;
 use Sifex\SlaTimer\SLASchedule as SLATimerSchedule;
 
 class SlaSchedule extends Model
@@ -39,7 +38,7 @@ class SlaSchedule extends Model
     {
         return static::create([
             'name' => $name,
-            'agendas' => $schedule->agendas
+            'agendas' => $schedule->agendas,
         ]);
     }
 }

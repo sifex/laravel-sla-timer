@@ -9,7 +9,6 @@ use Sifex\LaravelSlaTimer\Interfaces\CanRetrieveBreaches;
 use Sifex\LaravelSlaTimer\Interfaces\CanRetrieveSchedule;
 use Sifex\LaravelSlaTimer\Models\SlaBreachScheme;
 use Sifex\LaravelSlaTimer\Models\SlaScheduleScheme;
-use Sifex\LaravelSlaTimer\Tests\database\factories\ProjectFactory;
 use Sifex\LaravelSlaTimer\Tests\database\factories\TicketFactory;
 use Sifex\LaravelSlaTimer\Traits\HasSlaTracking;
 
@@ -24,7 +23,6 @@ class Ticket extends Model implements CanRetrieveBreaches, CanRetrieveSchedule
         'project_id',
         'created_at',
     ];
-
 
     protected $casts = [
         'sla_status' => SlaStatus::class,
