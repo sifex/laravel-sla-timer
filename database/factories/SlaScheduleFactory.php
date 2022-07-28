@@ -1,9 +1,9 @@
 <?php
 
-namespace Database\Factories\SLA;
+namespace Sifex\LaravelSlaTimer\Database\Factories;
 
-use App\Models\SlaSchedule;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Sifex\LaravelSlaTimer\Models\SlaSchedule;
 
 /**
  * @extends Factory

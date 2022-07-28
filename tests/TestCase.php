@@ -27,10 +27,19 @@ class TestCase extends Orchestra
     public function getEnvironmentSetUp($app)
     {
         config()->set('database.default', 'testing');
+    }
 
-        /*
-        $migration = include __DIR__.'/../database/migrations/create_laravel-sla-timer_table.php.stub';
-        $migration->up();
-        */
+    protected function defineDatabaseMigrations()
+    {
+//        $migration = include __DIR__.'/../database/migrations/create_sla_breach_schemes_table.php.stub';
+//        $migration->up();
+//        $migration = include __DIR__.'/../database/migrations/create_sla_breaches_table.php.stub';
+//        $migration->up();
+//        $migration = include __DIR__.'/../database/migrations/create_sla_schedule_schemes_table.php.stub';
+//        $migration->up();
+//        $migration = include __DIR__.'/../database/migrations/create_sla_schedules_table.php.stub';
+//        $migration->up();
+
+        $this->loadMigrationsFrom(__DIR__.'/database/migrations');
     }
 }

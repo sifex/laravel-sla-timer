@@ -1,7 +1,10 @@
 <?php
 
-use Illuminate\Foundation\Auth\User;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Sifex\LaravelSlaTimer\Tests\models\Ticket;
 
-it('can test', function () {
+uses(RefreshDatabase::class);
 
+it('tests basic functionality', function () {
+    $ticket = Ticket::factory()->create();
 });

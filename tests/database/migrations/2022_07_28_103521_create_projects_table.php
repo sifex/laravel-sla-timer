@@ -1,5 +1,7 @@
 <?php
 
+namespace Sifex\LaravelSlaTimer\Tests\database\migrations;
+
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -8,14 +10,11 @@ return new class extends Migration
 {
     public function up()
     {
-        Schema::create(config('sla.eloquent.schedule.table'), function (Blueprint $table) {
+        Schema::create('projects', function (Blueprint $table) {
             $table->id();
 
-            $table->text('name');
-            $table->text('agendas');
-            $table->date('effective_from')->nullable();
-
             $table->foreignIdFor(config('sla.eloquent.schedule_scheme.model'));
+            $table->foreignIdFor(config('sla.eloquent.breach_scheme.model'));
 
             $table->timestamps();
         });
@@ -23,6 +22,6 @@ return new class extends Migration
 
     public function down()
     {
-        Schema::dropIfExists(config('sla.eloquent.schedule.table'));
+        Schema::dropIfExists('projects');
     }
 };

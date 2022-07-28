@@ -1,9 +1,9 @@
 <?php
 
-namespace Database\Factories\SLA;
+namespace Sifex\LaravelSlaTimer\Database\Factories;
 
-use App\Models\SlaBreachScheme;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Sifex\LaravelSlaTimer\Models\SlaBreachScheme;
 
 class SlaBreachSchemeFactory extends Factory
 {
