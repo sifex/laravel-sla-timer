@@ -20,6 +20,6 @@ class LaravelSlaTimerServiceProvider extends PackageServiceProvider
             ->hasMigration('create_sla_breach_schemes_table')
             ->hasMigration('create_sla_breaches_table')
             ->hasMigration('create_sla_schedule_schemes_table')
-            ->hasMigration('create_sla_schedules_table.php');
+            ->hasMigration('create_sla_schedules_table');
     }
 }
