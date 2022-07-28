@@ -15,6 +15,12 @@ class SlaBreach extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'name',
+        'duration',
+        'sla_breach_scheme_id'
+    ];
+
     public function sla_breach_scheme(): BelongsTo
     {
         return $this->belongsTo(SlaBreachScheme::class);

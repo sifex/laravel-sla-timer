@@ -11,6 +11,10 @@ class SlaScheduleScheme extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'name'
+    ];
+
     /**
      * @return SLATimerSchedule[]
      */

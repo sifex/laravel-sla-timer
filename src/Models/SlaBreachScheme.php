@@ -11,6 +11,10 @@ class SlaBreachScheme extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'name'
+    ];
+
     /**
      * @return SLATimerBreach[]
      */

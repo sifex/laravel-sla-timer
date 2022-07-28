@@ -17,6 +17,12 @@ class SlaSchedule extends Model
         'agendas' => SlaAgendaCollection::class,
     ];
 
+    protected $fillable = [
+        'name',
+        'agendas',
+        'sla_schedule_scheme_id',
+    ];
+
     public function slaScheduleSchemes(): BelongsTo
     {
         return $this->belongsTo(SlaScheduleScheme::class);
@@ -24,8 +30,16 @@ class SlaSchedule extends Model
 
     public function toSchedule(): SLATimerSchedule
     {
-        return tap(SLATimerSchedule::create(), function (AgendaInterface $schedule) {
+        return tap(SLATimerSchedule::create(), function ($schedule) {
             $schedule->agendas = $this->agendas->toArray();
         });
+    }
+
+    public static function fromSchedule(SLATimerSchedule $schedule, $name = 'Schedule'): self
+    {
+        return static::create([
+            'name' => $name,
+            'agendas' => $schedule->agendas
+        ]);
     }
 }
