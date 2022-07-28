@@ -31,14 +31,14 @@ class TestCase extends Orchestra
 
     protected function defineDatabaseMigrations()
     {
-//        $migration = include __DIR__.'/../database/migrations/create_sla_breach_schemes_table.php.stub';
-//        $migration->up();
-//        $migration = include __DIR__.'/../database/migrations/create_sla_breaches_table.php.stub';
-//        $migration->up();
-//        $migration = include __DIR__.'/../database/migrations/create_sla_schedule_schemes_table.php.stub';
-//        $migration->up();
-//        $migration = include __DIR__.'/../database/migrations/create_sla_schedules_table.php.stub';
-//        $migration->up();
+        $migration = include __DIR__.'/../database/migrations/create_sla_breach_schemes_table.php.stub';
+        $migration->up();
+        $migration = include __DIR__.'/../database/migrations/create_sla_breaches_table.php.stub';
+        $migration->up();
+        $migration = include __DIR__.'/../database/migrations/create_sla_schedule_schemes_table.php.stub';
+        $migration->up();
+        $migration = include __DIR__.'/../database/migrations/create_sla_schedules_table.php.stub';
+        $migration->up();
 
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
     }
