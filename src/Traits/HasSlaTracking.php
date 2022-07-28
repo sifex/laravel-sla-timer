@@ -2,11 +2,11 @@
 
 namespace Sifex\LaravelSlaTimer\Traits;
 
+use Illuminate\Database\Eloquent\Model;
 use Sifex\LaravelSlaTimer\Models\Interfaces\CanRetrieveBreaches;
 use Sifex\LaravelSlaTimer\Models\Interfaces\CanRetrieveSchedule;
 use Sifex\LaravelSlaTimer\Models\SlaBreachScheme;
 use Sifex\LaravelSlaTimer\Models\SlaScheduleScheme;
-use Illuminate\Database\Eloquent\Model;
 use Sifex\SlaTimer\SLA as SLATimer;
 use Sifex\SlaTimer\SLABreach as SLATimerBreach;
 use Sifex\SlaTimer\SLASchedule as SLATimerSchedule;

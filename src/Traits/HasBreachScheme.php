@@ -2,8 +2,8 @@
 
 namespace Sifex\LaravelSlaTimer\Traits;
 
-use Sifex\LaravelSlaTimer\Models\SlaBreachScheme;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Sifex\LaravelSlaTimer\Models\SlaBreachScheme;
 
 /**
  * @method belongsTo: BelongsTo
