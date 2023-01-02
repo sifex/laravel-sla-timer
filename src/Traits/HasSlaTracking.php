@@ -18,6 +18,7 @@ use Sifex\SlaTimer\SLAStatus as SLATimerStatus;
  * @property SlaScheduleScheme $schedule_scheme
  * @property SlaBreachScheme $breach_scheme
  * @property SLATimerStatus $sla_status
+ *
  * @implements CanRetrieveBreaches
  * @implements CanRetrieveSchedule
  */
